@@ -22,7 +22,7 @@ export class AuthService {
 
         response.user.updateProfile({
           displayName: first_name + " " + last_name,
-          photoURL: "https://api.adorable.io/avatars/" +  randomNumber
+          photoURL: "https://i.pravatar.cc/300"
         }).then(() => {
           resolve(response.user);
         }).catch((error) => {
