@@ -42,7 +42,8 @@ export class EditProfileComponent implements OnInit {
     this.message = "Updating Profile...";
 
     firebase.auth().currentUser.updateProfile({
-      displayName: this.user.displayName, photoURL: this.user.photoUrl
+      displayName: this.user.displayName, 
+      photoURL: this.user.photoUrl
     }).then(() => {
 
       let userId = firebase.auth().currentUser.uid;
